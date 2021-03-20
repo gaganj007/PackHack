@@ -20,10 +20,72 @@ public class openingUrl
             if(mainSelection == 1)
             {
                 categoryMath();
+                int secondaryOption = scan.nextInt();
+                while(secondaryOption != -1)
+                {
+                    if(secondaryOption == 1)
+                    {
+                        d.browse(new URI("https://tutorial.math.lamar.edu/problems/alg/alg.aspx"));
+                        categoryMath();
+
+                    }
+                    else if(secondaryOption == 2)
+                    {
+                        d.browse(new URI("https://tutorial.math.lamar.edu/problems/calci/calci.aspx"));
+                        categoryMath();
+
+                    }
+                    else if(secondaryOption == 3)
+                    {
+                        d.browse(new URI("https://tutorial.math.lamar.edu/problems/calcii/calcii.aspx"));
+                        categoryMath();
+
+                    }
+                    else if(secondaryOption == 4)
+                    {
+                        d.browse(new URI("https://tutorial.math.lamar.edu/problems/calciii/calciii.aspx"));
+                        categoryMath();
+                    }
+                    else
+                    {
+                        System.out.println("Please enter a valid response");
+                        categoryMath();
+                    }
+
+                    secondaryOption = scan.nextInt();
+
+                }
+                mainOptions();
             }
             else if(mainSelection == 2)
             {
                 categoryPhysics();
+                int secondaryOption = scan.nextInt();
+                while(secondaryOption != -1)
+                {
+                    if(secondaryOption == 1)
+                    {
+                        d.browse(new URI("https://www.physicsclassroom.com/calcpad/problems"));
+                        categoryPhysics();
+
+                    }
+                    else if(secondaryOption == 2)
+                    {
+                        d.browse(new URI("https://www.uwgb.edu/fenclh/problems/electricity-magnetism/"));
+                        categoryPhysics();
+
+                    }
+
+                    else
+                    {
+                        System.out.println("Please enter a valid response");
+                        categoryPhysics();
+                    }
+
+                    secondaryOption = scan.nextInt();
+
+                }
+                mainOptions();
             }
             else if(mainSelection == 3)
             {
@@ -82,11 +144,19 @@ public class openingUrl
 
     public static void categoryMath()
     {
+        System.out.println("What Mathematics topic do you want to try out? Enter -1 to quit");
+        System.out.println("\t1. Algebra");
+        System.out.println("\t2. Calculus I");
+        System.out.println("\t3. Calculus II");
+        System.out.println("\t4. Calculus III");
 
     }
 
     public static void categoryPhysics()
     {
+        System.out.println("What Physics topic do you want to try out? Enter -1 to quit");
+        System.out.println("\t1. Mechanics");
+        System.out.println("\t2. Electricity and Magnetism");
 
     }
 
