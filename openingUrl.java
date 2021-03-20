@@ -111,6 +111,11 @@ public class openingUrl
                         categoryPuzzles();
 
                     }
+					else if (secondaryOption == 4) {
+						
+						d.browse(new URI("https://www.boatloadpuzzles.com/playcrossword"));
+						categoryPuzzles();
+					}
                     else
                     {
                         System.out.println("Please enter a valid response");
@@ -123,6 +128,37 @@ public class openingUrl
                 mainOptions();
 
             }
+			else if(mainSelection == 4) {
+				categoryCoding();
+				int secondaryOption = scan.nextInt();
+				while (secondaryOption != -1) {
+					if (secondaryOption == 1) {
+						
+						d.browse(new URI("https://code-exercises.com/"));
+						categoryCoding();
+					}
+					else if (secondaryOption == 2) {
+						
+						d.browse(new URI("https://edabit.com/challenges/csharp"));
+						categoryCoding();
+					}
+					else if (secondaryOption == 3) {
+						
+						d.browse(new URI("https://codingbat.com/python"));
+						categoryCoding();
+					}
+					else {
+						System.out.println("Please enter a valid response");
+						categoryCoding();
+					}
+					
+					secondaryOption = scan.nextInt();
+				
+				}
+				mainOptions();
+				
+				
+			}
             else
             {
                 System.out.println("Please enter a valid response");
@@ -140,6 +176,7 @@ public class openingUrl
         System.out.println("\t1. Mathematics");
         System.out.println("\t2. Physics");
         System.out.println("\t3. Puzzles");
+		System.out.println("\t4. Coding");
     }
 
     public static void categoryMath()
@@ -166,5 +203,16 @@ public class openingUrl
         System.out.println("\t1. Cryptography");
         System.out.println("\t2. General Knowledge");
         System.out.println("\t3. Sudoku");
+		System.out.println("\t4. Crossword Puzzle");
     }
+	
+	public static void categoryCoding() {
+		System.out.println("What Coding Langauge would you like to Pratice? Enter -1 to quit");
+		System.out.println("\t1. Java");
+		System.out.println("\t2. C#");
+		System.out.println("\t3. Python");
+		
+		
+		
+	}
 }
