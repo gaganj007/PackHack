@@ -14,4 +14,15 @@ Physics:
 1) Mechanics - https://www.physicsclassroom.com/calcpad/problems
 2) Electricity and Magnetism - https://www.uwgb.edu/fenclh/problems/electricity-magnetism/
 
+Coding:
+1) Java - https://code-exercises.com/
+2) C# - https://edabit.com/challenges/csharp
+3) Python - https://codingbat.com/python
+
+Puzzles:
+1) Cryptography - https://cryptograms.puzzlebaron.com/play.php?session=1611001719
+2) General Knowledge - https://www.transglobalexpress.co.uk/social/world-general-knowledge-quiz-2016/#R6598806-697BE21e
+3) Sudoku - https://sudoku.com/
+4) Crossword Puzzle - https://www.boatloadpuzzles.com/playcrossword
+
 
