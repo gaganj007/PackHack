@@ -176,7 +176,7 @@ public class openingUrl
         System.out.println("\t1. Mathematics");
         System.out.println("\t2. Physics");
         System.out.println("\t3. Puzzles");
-		System.out.println("\t4. Coding");
+	System.out.println("\t4. Coding");
     }
 
     public static void categoryMath()
@@ -203,7 +203,7 @@ public class openingUrl
         System.out.println("\t1. Cryptography");
         System.out.println("\t2. General Knowledge");
         System.out.println("\t3. Sudoku");
-		System.out.println("\t4. Crossword Puzzle");
+	System.out.println("\t4. Crossword Puzzle");
     }
 	
 	public static void categoryCoding() {
