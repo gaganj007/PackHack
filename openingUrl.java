@@ -8,7 +8,7 @@ public class openingUrl
 {
     public static void main(String[] args) throws URISyntaxException, IOException {
         Desktop d = Desktop.getDesktop();
-        //d.browse(new URI("https://www.youtube.com/watch?v=dQw4w9WgXcQ"));
+        
 
         Scanner scan = new Scanner(System.in);
 
